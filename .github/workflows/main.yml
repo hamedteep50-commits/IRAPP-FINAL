@@ -15,7 +15,7 @@ jobs:
 
       - name: پیدا کردن و باز کردن فایل نهایی
         run: |
-          ZIP=$(find . -maxdepth 2 -type f -name "IRAPP_UNIFIED_FINAL_v3.2_GITHUB_READY.zip" | head -1)
+          ZIP=$(find . -maxdepth 2 -type f -name "IRAPP_UNIFIED_FINAL_v3.3_FIXED_GITHUB_READY.zip" | head -1)
           test -n "$ZIP"
           mkdir project
           unzip -q "$ZIP" -d project
@@ -47,5 +47,5 @@ jobs:
       - name: ذخیره APK نهایی
         uses: actions/upload-artifact@v4
         with:
-          name: IRAPP-UNIFIED-FINAL-v3.2-APK
+          name: IRAPP-UNIFIED-FINAL-v3.3-APK
           path: project/app/build/outputs/apk/debug/app-debug.apk
