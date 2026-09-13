@@ -1,0 +1,67 @@
+name: Build IRAPP Unified Final APK
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: دریافت پروژه
+        uses: actions/checkout@v4
+
+      - name: تنظیم Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: تنظیم Android SDK
+        uses: android-actions/setup-android@v3
+
+      - name: نصب ابزارهای Android
+        run: |
+          yes | sdkmanager --licenses || true
+          sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
+
+      - name: پیدا کردن پروژه
+        run: |
+          echo "Files in repository:"
+          find . -maxdepth 3 -type f | sort
+
+      - name: پیدا کردن Gradle
+        run: |
+          if [ -f "./gradlew" ]; then
+            chmod +x ./gradlew
+          elif [ -f "./project/gradlew" ]; then
+            chmod +x ./project/gradlew
+          else
+            echo "Gradle wrapper پیدا نشد."
+            exit 1
+          fi
+
+      - name: ساخت APK
+        run: |
+          if [ -f "./gradlew" ]; then
+            ./gradlew assembleDebug --stacktrace
+          else
+            cd project
+            ./gradlew assembleDebug --stacktrace
+          fi
+
+      - name: پیدا کردن APK
+        run: |
+          echo "APK files:"
+          find . -type f -name "*.apk" -print
+
+      - name: ذخیره APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: IRAPP-UNIFIED-FINAL-APK
+          path: |
+            **/build/outputs/apk/**/*.apk
+          if-no-files-found: error
