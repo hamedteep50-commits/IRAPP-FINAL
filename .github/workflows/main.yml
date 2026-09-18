@@ -2,42 +2,32 @@ name: Build IRAPP APK
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout project
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
+      - name: Java 17
         uses: actions/setup-java@v4
         with:
-          distribution: temurin
           java-version: '17'
-          cache: gradle
+          distribution: 'temurin'
 
-      - name: Set up Android SDK
+      - name: Android SDK
         uses: android-actions/setup-android@v3
 
-      - name: Make Gradle executable
+      - name: Grant execute permission
         run: chmod +x gradlew
 
       - name: Build APK
-        run: ./gradlew assembleDebug --stacktrace
-
-      - name: Find APK
-        run: |
-          echo "APK files:"
-          find . -type f -name "*.apk" -print
+        run: ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: IRAPP-APK
-          path: "**/build/outputs/apk/**/*.apk"
-          if-no-files-found: error
+          path: '**/build/outputs/apk/**/*.apk'
