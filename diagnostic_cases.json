@@ -1,0 +1,19 @@
+{
+  "table": "diagnostic_cases",
+  "fields": [
+    "id",
+    "vehicle_id",
+    "variant_id",
+    "symptom",
+    "possible_causes",
+    "tests",
+    "expected_results",
+    "related_part_ids",
+    "dtc_ids",
+    "repair_steps",
+    "safety_level",
+    "source_ids",
+    "verification_status"
+  ],
+  "records": []
+}

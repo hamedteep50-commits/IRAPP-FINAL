@@ -1,0 +1,2602 @@
+[
+  {
+    "vehicle_id": "V001",
+    "manufacturer": "ایران خودرو",
+    "model": "پیکان",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V002",
+    "manufacturer": "ایران خودرو",
+    "model": "پژو 405",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V003",
+    "manufacturer": "ایران خودرو",
+    "model": "پژو پارس",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V004",
+    "manufacturer": "ایران خودرو",
+    "model": "پژو 206 تیپ 2",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V005",
+    "manufacturer": "ایران خودرو",
+    "model": "پژو 206 تیپ 5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V006",
+    "manufacturer": "ایران خودرو",
+    "model": "پژو 206 SD",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V007",
+    "manufacturer": "ایران خودرو",
+    "model": "پژو 207",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V008",
+    "manufacturer": "ایران خودرو",
+    "model": "رانا",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V009",
+    "manufacturer": "ایران خودرو",
+    "model": "سمند LX",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V010",
+    "manufacturer": "ایران خودرو",
+    "model": "سمند EF7",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V011",
+    "manufacturer": "ایران خودرو",
+    "model": "سورن پلاس",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V012",
+    "manufacturer": "ایران خودرو",
+    "model": "دنا",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V013",
+    "manufacturer": "ایران خودرو",
+    "model": "دنا پلاس",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V014",
+    "manufacturer": "ایران خودرو",
+    "model": "دنا پلاس توربو",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V015",
+    "manufacturer": "ایران خودرو",
+    "model": "دنا پلاس توربو اتومات",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V016",
+    "manufacturer": "ایران خودرو",
+    "model": "رانا پلاس",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V017",
+    "manufacturer": "ایران خودرو",
+    "model": "پژو 207 پانوراما",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V018",
+    "manufacturer": "ایران خودرو",
+    "model": "تارا دستی",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V019",
+    "manufacturer": "ایران خودرو",
+    "model": "تارا اتومات",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V020",
+    "manufacturer": "ایران خودرو",
+    "model": "ری‌را",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V021",
+    "manufacturer": "سایپا",
+    "model": "پراید صبا",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V022",
+    "manufacturer": "سایپا",
+    "model": "پراید نسیم",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V023",
+    "manufacturer": "سایپا",
+    "model": "پراید 131",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V024",
+    "manufacturer": "سایپا",
+    "model": "پراید 132",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V025",
+    "manufacturer": "سایپا",
+    "model": "پراید 141",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V026",
+    "manufacturer": "سایپا",
+    "model": "پراید 151",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V027",
+    "manufacturer": "سایپا",
+    "model": "پراید 111",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V028",
+    "manufacturer": "سایپا",
+    "model": "تیبا",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V029",
+    "manufacturer": "سایپا",
+    "model": "تیبا 2",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V030",
+    "manufacturer": "سایپا",
+    "model": "ساینا",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V031",
+    "manufacturer": "سایپا",
+    "model": "ساینا S",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V032",
+    "manufacturer": "سایپا",
+    "model": "ساینا S دوگانه‌سوز",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V033",
+    "manufacturer": "سایپا",
+    "model": "کوییک",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V034",
+    "manufacturer": "سایپا",
+    "model": "کوییک S",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V035",
+    "manufacturer": "سایپا",
+    "model": "کوییک R",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V036",
+    "manufacturer": "سایپا",
+    "model": "کوییک R پلاس",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V037",
+    "manufacturer": "سایپا",
+    "model": "کوییک GX",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V038",
+    "manufacturer": "سایپا",
+    "model": "کوییک GXR",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V039",
+    "manufacturer": "سایپا",
+    "model": "شاهین G",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V040",
+    "manufacturer": "سایپا",
+    "model": "شاهین اتومات",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V041",
+    "manufacturer": "کار",
+    "model": "پیکان وانت",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V042",
+    "manufacturer": "ایران خودرو دیزل",
+    "model": "آریسان",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V043",
+    "manufacturer": "ایران خودرو دیزل",
+    "model": "آریسان 2",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V044",
+    "manufacturer": "سایپا",
+    "model": "پراید 151 وانت",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V045",
+    "manufacturer": "زامیاد",
+    "model": "نیسان زامیاد",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V046",
+    "manufacturer": "زامیاد",
+    "model": "زامیاد دوگانه‌سوز",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V047",
+    "manufacturer": "زامیاد",
+    "model": "زامیاد دیزل",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V048",
+    "manufacturer": "زامیاد",
+    "model": "پادرا",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V049",
+    "manufacturer": "زامیاد",
+    "model": "پادرا پلاس",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V050",
+    "manufacturer": "ایران خودرو",
+    "model": "کارون",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V051",
+    "manufacturer": "بهمن",
+    "model": "مزدا 323",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V052",
+    "manufacturer": "بهمن",
+    "model": "مزدا 3",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V053",
+    "manufacturer": "بهمن",
+    "model": "مزدا 3 جدید",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V054",
+    "manufacturer": "بهمن",
+    "model": "کاپرا",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V055",
+    "manufacturer": "بهمن",
+    "model": "کاپرا 2",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V056",
+    "manufacturer": "بهمن",
+    "model": "فیدلیتی پرایم",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V057",
+    "manufacturer": "بهمن",
+    "model": "فیدلیتی پرستیژ",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V058",
+    "manufacturer": "بهمن",
+    "model": "دیگنیتی پرایم",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V059",
+    "manufacturer": "بهمن",
+    "model": "دیگنیتی پرستیژ",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V060",
+    "manufacturer": "بهمن",
+    "model": "ریسپکت",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V061",
+    "manufacturer": "کرمان موتور",
+    "model": "JAC J3",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V062",
+    "manufacturer": "کرمان موتور",
+    "model": "JAC J4",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V063",
+    "manufacturer": "کرمان موتور",
+    "model": "JAC J5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V064",
+    "manufacturer": "کرمان موتور",
+    "model": "JAC S5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V065",
+    "manufacturer": "کرمان موتور",
+    "model": "JAC S3",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V066",
+    "manufacturer": "کرمان موتور",
+    "model": "JAC J7",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V067",
+    "manufacturer": "کرمان موتور",
+    "model": "JAC A5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V068",
+    "manufacturer": "کرمان موتور",
+    "model": "JAC X5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V069",
+    "manufacturer": "کرمان موتور",
+    "model": "JAC T8",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V070",
+    "manufacturer": "کرمان موتور",
+    "model": "JAC T9",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V071",
+    "manufacturer": "MVM/Chery",
+    "model": "MVM 110",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V072",
+    "manufacturer": "MVM/Chery",
+    "model": "MVM 315",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V073",
+    "manufacturer": "MVM/Chery",
+    "model": "MVM 530",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V074",
+    "manufacturer": "MVM/Chery",
+    "model": "MVM 550",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V075",
+    "manufacturer": "MVM/Chery",
+    "model": "MVM X22",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V076",
+    "manufacturer": "MVM/Chery",
+    "model": "MVM X22 Pro",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V077",
+    "manufacturer": "MVM/Chery",
+    "model": "MVM X33",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V078",
+    "manufacturer": "MVM/Chery",
+    "model": "MVM X33 S",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V079",
+    "manufacturer": "MVM/Chery",
+    "model": "MVM X55",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V080",
+    "manufacturer": "MVM/Chery",
+    "model": "MVM X55 Pro",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V081",
+    "manufacturer": "Chery",
+    "model": "Arrizo 5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V082",
+    "manufacturer": "Chery",
+    "model": "Arrizo 5 FL",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V083",
+    "manufacturer": "Chery",
+    "model": "Arrizo 6",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V084",
+    "manufacturer": "Chery",
+    "model": "Arrizo 6 Pro",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V085",
+    "manufacturer": "Chery",
+    "model": "Arrizo 6 GT",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V086",
+    "manufacturer": "Chery",
+    "model": "Arrizo 8",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V087",
+    "manufacturer": "Chery",
+    "model": "Tiggo 5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V088",
+    "manufacturer": "Chery",
+    "model": "Tiggo 7",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V089",
+    "manufacturer": "Chery",
+    "model": "Tiggo 7 Pro",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V090",
+    "manufacturer": "Chery",
+    "model": "Tiggo 8 Pro",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V091",
+    "manufacturer": "Fownix/Exeed",
+    "model": "Fownix FX",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V092",
+    "manufacturer": "Fownix/Exeed",
+    "model": "Fownix FX برقی",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V093",
+    "manufacturer": "Fownix/Exeed",
+    "model": "Fownix Arrizo 6 Pro",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V094",
+    "manufacturer": "Fownix/Exeed",
+    "model": "Fownix Arrizo 8",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V095",
+    "manufacturer": "Fownix/Exeed",
+    "model": "Tiggo 7 Pro Max",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V096",
+    "manufacturer": "Fownix/Exeed",
+    "model": "Tiggo 8 Pro Max",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V097",
+    "manufacturer": "Exeed",
+    "model": "Exeed LX",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V098",
+    "manufacturer": "Exeed",
+    "model": "Exeed TXL",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V099",
+    "manufacturer": "Exeed",
+    "model": "Exeed VX",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V100",
+    "manufacturer": "Lucano",
+    "model": "Lucano L7",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V101",
+    "manufacturer": "Renault",
+    "model": "Renault 5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V102",
+    "manufacturer": "Renault",
+    "model": "Renault 21",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V103",
+    "manufacturer": "Renault",
+    "model": "Renault Logan",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V104",
+    "manufacturer": "Renault",
+    "model": "Renault L90",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V105",
+    "manufacturer": "Renault",
+    "model": "Renault Sandero",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V106",
+    "manufacturer": "Renault",
+    "model": "Sandero Stepway",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V107",
+    "manufacturer": "Renault",
+    "model": "Renault Symbol",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V108",
+    "manufacturer": "Renault",
+    "model": "Renault Megane",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V109",
+    "manufacturer": "Renault",
+    "model": "Renault Fluence",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V110",
+    "manufacturer": "Renault",
+    "model": "Renault Koleos",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V111",
+    "manufacturer": "Peugeot",
+    "model": "Peugeot 206",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V112",
+    "manufacturer": "Peugeot",
+    "model": "Peugeot 207",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V113",
+    "manufacturer": "Peugeot",
+    "model": "Peugeot 208",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V114",
+    "manufacturer": "Peugeot",
+    "model": "Peugeot 301",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V115",
+    "manufacturer": "Peugeot",
+    "model": "Peugeot 307",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V116",
+    "manufacturer": "Peugeot",
+    "model": "Peugeot 308",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V117",
+    "manufacturer": "Peugeot",
+    "model": "Peugeot 405",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V118",
+    "manufacturer": "Peugeot",
+    "model": "Peugeot 406",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V119",
+    "manufacturer": "Peugeot",
+    "model": "Peugeot 407",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V120",
+    "manufacturer": "Peugeot",
+    "model": "Peugeot 508",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V121",
+    "manufacturer": "Toyota",
+    "model": "Toyota Corolla",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V122",
+    "manufacturer": "Toyota",
+    "model": "Toyota Camry",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V123",
+    "manufacturer": "Toyota",
+    "model": "Toyota Yaris",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V124",
+    "manufacturer": "Toyota",
+    "model": "Toyota Prius",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V125",
+    "manufacturer": "Toyota",
+    "model": "Toyota RAV4",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V126",
+    "manufacturer": "Toyota",
+    "model": "Toyota C-HR",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V127",
+    "manufacturer": "Toyota",
+    "model": "Toyota Land Cruiser",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V128",
+    "manufacturer": "Toyota",
+    "model": "Toyota Prado",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V129",
+    "manufacturer": "Toyota",
+    "model": "Toyota Hilux",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V130",
+    "manufacturer": "Toyota",
+    "model": "Toyota Corolla Cross",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V131",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai Accent",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V132",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai Elantra",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V133",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai Sonata",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V134",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai i20",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V135",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai i30",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V136",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai Tucson",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V137",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai Santa Fe",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V138",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai ix35",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V139",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai Kona",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V140",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai Santa Cruz",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V141",
+    "manufacturer": "Kia",
+    "model": "Kia Pride",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V142",
+    "manufacturer": "Kia",
+    "model": "Kia Rio",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V143",
+    "manufacturer": "Kia",
+    "model": "Kia Cerato",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V144",
+    "manufacturer": "Kia",
+    "model": "Kia Optima",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V145",
+    "manufacturer": "Kia",
+    "model": "Kia K5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V146",
+    "manufacturer": "Kia",
+    "model": "Kia Sportage",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V147",
+    "manufacturer": "Kia",
+    "model": "Kia Sorento",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V148",
+    "manufacturer": "Kia",
+    "model": "Kia Picanto",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V149",
+    "manufacturer": "Kia",
+    "model": "Kia Soul",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V150",
+    "manufacturer": "Kia",
+    "model": "Kia Stonic",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V151",
+    "manufacturer": "Nissan",
+    "model": "Nissan Sunny",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V152",
+    "manufacturer": "Nissan",
+    "model": "Nissan Maxima",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V153",
+    "manufacturer": "Nissan",
+    "model": "Nissan Altima",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V154",
+    "manufacturer": "Nissan",
+    "model": "Nissan Teana",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V155",
+    "manufacturer": "Nissan",
+    "model": "Nissan X-Trail",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V156",
+    "manufacturer": "Nissan",
+    "model": "Nissan Qashqai",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V157",
+    "manufacturer": "Nissan",
+    "model": "Nissan Juke",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V158",
+    "manufacturer": "Nissan",
+    "model": "Nissan Patrol",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V159",
+    "manufacturer": "Nissan",
+    "model": "Nissan Navara",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V160",
+    "manufacturer": "Nissan",
+    "model": "Nissan Frontier",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V161",
+    "manufacturer": "Mercedes-Benz",
+    "model": "Mercedes C-Class",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V162",
+    "manufacturer": "Mercedes-Benz",
+    "model": "Mercedes E-Class",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V163",
+    "manufacturer": "Mercedes-Benz",
+    "model": "Mercedes S-Class",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V164",
+    "manufacturer": "Mercedes-Benz",
+    "model": "Mercedes A-Class",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V165",
+    "manufacturer": "Mercedes-Benz",
+    "model": "Mercedes B-Class",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V166",
+    "manufacturer": "Mercedes-Benz",
+    "model": "Mercedes CLA",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V167",
+    "manufacturer": "Mercedes-Benz",
+    "model": "Mercedes GLA",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V168",
+    "manufacturer": "Mercedes-Benz",
+    "model": "Mercedes GLC",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V169",
+    "manufacturer": "Mercedes-Benz",
+    "model": "Mercedes GLE",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V170",
+    "manufacturer": "Mercedes-Benz",
+    "model": "Mercedes Sprinter",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V171",
+    "manufacturer": "BMW",
+    "model": "BMW 1 Series",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V172",
+    "manufacturer": "BMW",
+    "model": "BMW 3 Series",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V173",
+    "manufacturer": "BMW",
+    "model": "BMW 5 Series",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V174",
+    "manufacturer": "BMW",
+    "model": "BMW 7 Series",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V175",
+    "manufacturer": "BMW",
+    "model": "BMW X1",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V176",
+    "manufacturer": "BMW",
+    "model": "BMW X3",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V177",
+    "manufacturer": "BMW",
+    "model": "BMW X5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V178",
+    "manufacturer": "BMW",
+    "model": "BMW X6",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V179",
+    "manufacturer": "BMW",
+    "model": "BMW X7",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V180",
+    "manufacturer": "BMW",
+    "model": "BMW i3",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V181",
+    "manufacturer": "Ford",
+    "model": "Ford Mustang",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V182",
+    "manufacturer": "Ford",
+    "model": "Ford Explorer",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V183",
+    "manufacturer": "Ford",
+    "model": "Ford Ranger",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V184",
+    "manufacturer": "Chevrolet",
+    "model": "Chevrolet Camaro",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V185",
+    "manufacturer": "Chevrolet",
+    "model": "Chevrolet Tahoe",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V186",
+    "manufacturer": "Chevrolet",
+    "model": "Chevrolet Captiva",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V187",
+    "manufacturer": "Volkswagen",
+    "model": "Volkswagen Golf",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V188",
+    "manufacturer": "Volkswagen",
+    "model": "Volkswagen Passat",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V189",
+    "manufacturer": "Volkswagen",
+    "model": "Volkswagen Tiguan",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V190",
+    "manufacturer": "Skoda",
+    "model": "Skoda Octavia",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V191",
+    "manufacturer": "BYD",
+    "model": "BYD Qin",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V192",
+    "manufacturer": "BYD",
+    "model": "BYD Song Plus",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V193",
+    "manufacturer": "BYD",
+    "model": "BYD Atto 3",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V194",
+    "manufacturer": "Kia",
+    "model": "Kia Niro Hybrid",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V195",
+    "manufacturer": "Toyota",
+    "model": "Toyota Prius Hybrid",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V196",
+    "manufacturer": "Toyota",
+    "model": "Toyota Corolla Hybrid",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V197",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai Ioniq Hybrid",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V198",
+    "manufacturer": "Hyundai",
+    "model": "Hyundai Ioniq 5",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V199",
+    "manufacturer": "Tesla",
+    "model": "Tesla Model 3",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  },
+  {
+    "vehicle_id": "V200",
+    "manufacturer": "Tesla",
+    "model": "Tesla Model Y",
+    "stages": {
+      "identity": false,
+      "year_generation": false,
+      "engine": false,
+      "transmission": false,
+      "parts_oem": false
+    },
+    "status": "pending_verified_source"
+  }
+]

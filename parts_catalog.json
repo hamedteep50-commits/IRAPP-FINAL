@@ -1,0 +1,17 @@
+{
+  "table": "parts_catalog",
+  "fields": [
+    "id",
+    "vehicle_id",
+    "variant_id",
+    "system",
+    "part_name",
+    "part_aliases",
+    "oem_number",
+    "aftermarket_numbers",
+    "position",
+    "source_ids",
+    "verification_status"
+  ],
+  "records": []
+}

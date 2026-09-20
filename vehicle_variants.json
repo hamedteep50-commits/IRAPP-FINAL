@@ -1,0 +1,20 @@
+{
+  "table": "vehicle_variants",
+  "fields": [
+    "id",
+    "vehicle_id",
+    "model_year",
+    "generation",
+    "body_type",
+    "engine_code",
+    "engine_displacement_cc",
+    "engine_power_kw",
+    "fuel_type",
+    "transmission",
+    "drive_type",
+    "market",
+    "source_ids",
+    "verification_status"
+  ],
+  "records": []
+}
