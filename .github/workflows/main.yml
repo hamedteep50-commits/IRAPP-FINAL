@@ -30,15 +30,21 @@ jobs:
           echo "Using ZIP: $ZIP_FILE"
           unzip -o "$ZIP_FILE" -d extracted
 
-      - name: Find Gradle project
+      -      - name: Find Gradle project
         run: |
+          echo "Searching for Gradle project..."
+          find extracted -maxdepth 5 -type f \( -name "gradlew" -o -name "settings.gradle" -o -name "settings.gradle.kts" \) -print
+
           GRADLEW=$(find extracted -type f -name "gradlew" | head -n 1)
+
           if [ -z "$GRADLEW" ]; then
-            echo "gradlew not found"
+            echo "ERROR: gradlew not found inside ZIP"
             exit 1
           fi
+
           PROJECT_DIR=$(dirname "$GRADLEW")
           echo "PROJECT_DIR=$PROJECT_DIR" >> "$GITHUB_ENV"
+
           chmod +x "$GRADLEW"
 
       - name: Build APK
