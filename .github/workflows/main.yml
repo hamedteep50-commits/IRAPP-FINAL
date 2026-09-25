@@ -9,23 +9,19 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
-      - name: Check source ZIP
-        run: |
-          echo "=== Repository files ==="
-          ls -lah
-          echo "=== IRAPP ZIP ==="
-          ls -lh IRAPP_v4.1.1_COMPLETE_2026-09-25.zip
+      - name: Set up JDK 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
 
       - name: Unzip IRAPP source
         run: |
           rm -rf irapp
           mkdir -p irapp
           unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp
-
-          echo "=== Extracted structure ==="
-          find irapp -maxdepth 4 -type f | head -200
 
           echo "=== Finding Gradle wrapper ==="
           find irapp -type f -name gradlew -print
@@ -34,19 +30,11 @@ jobs:
 
           if [ -z "$GRADLEW" ]; then
             echo "ERROR: gradlew not found"
+            find irapp -maxdepth 4 -type f | head -200
             exit 1
           fi
 
           chmod +x "$GRADLEW"
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
-
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
 
       - name: Build APK
         run: |
@@ -57,20 +45,15 @@ jobs:
             exit 1
           fi
 
-          PROJECT_DIR=$(dirname "$GRADLEW")
-
-          echo "Gradle wrapper: $GRADLEW"
-          echo "Project directory: $PROJECT_DIR"
-
-          cd "$PROJECT_DIR"
+          cd "$(dirname "$GRADLEW")"
 
           chmod +x ./gradlew
 
           echo "=== Gradle version ==="
           ./gradlew --version
 
-          echo "=== Building APK ==="
-          ./gradlew assembleDebug --stacktrace --info
+          echo "=== Building IRAPP APK ==="
+          ./gradlew assembleDebug --stacktrace
 
       - name: Find APK
         if: success()
