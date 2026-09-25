@@ -1,4 +1,14 @@
-name: Build IRAPP v4.1.1 APK
+      - name: Build APK
+        run: |
+          GRADLEW=$(find irapp -name gradlew -type f | head -n 1)
+          if [ -z "$GRADLEW" ]; then
+            echo "gradlew not found"
+            find irapp -maxdepth 4 -type f | head -200
+            exit 1
+          fi
+          cd "$(dirname "$GRADLEW")"
+          chmod +x ./gradlew
+          ./gradlew assembleDebug --stacktrace
 
 on:
   workflow_dispatch:
