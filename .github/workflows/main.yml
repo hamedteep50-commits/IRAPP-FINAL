@@ -13,8 +13,7 @@ jobs:
 
       - name: Unzip IRAPP source
         run: |
-           unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp
-    find irapp -name gradlew -type f -exec chmod +x {} \;
+           unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp    find irapp -name gradlew -type f -exec chmod +x {} \;
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
