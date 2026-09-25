@@ -13,7 +13,8 @@ jobs:
 
       - name: Unzip IRAPP source
         run: |
-           unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp    find irapp -name gradlew -type f -exec chmod +x {} \;
+          unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp
+          find irapp -name gradlew -type f -exec chmod +x {} \;
 
       - name: Set up JDK 17
         uses: actions/setup-java@v4
@@ -22,9 +23,14 @@ jobs:
           java-version: '17'
 
       - name: Build APK
-        working-directory: irapp
         run: |
-          chmod +x gradlew
+          GRADLEW=$(find irapp -name gradlew -type f | head -n 1)
+          if [ -z "$GRADLEW" ]; then
+            echo "gradlew not found"
+            find irapp -maxdepth 3 -type f | head -100
+            exit 1
+          fi
+          cd "$(dirname "$GRADLEW")"
           ./gradlew assembleDebug
 
       - name: Upload APK
