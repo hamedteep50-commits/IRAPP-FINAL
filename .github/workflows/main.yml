@@ -27,7 +27,6 @@ jobs:
 
           if [ -z "$GRADLEW" ]; then
             echo "ERROR: gradlew not found"
-            find irapp -maxdepth 5 -type f | head -200
             exit 1
           fi
 
