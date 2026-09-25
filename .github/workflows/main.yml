@@ -27,12 +27,24 @@ jobs:
 
           if [ -z "$GRADLEW" ]; then
             echo "ERROR: gradlew not found"
+            find irapp -maxdepth 5 -type f | head -200
             exit 1
           fi
 
           chmod +x "$GRADLEW"
           cd "$(dirname "$GRADLEW")"
+
+          echo "=== Gradle version ==="
+          ./gradlew --version
+
+          echo "=== Building IRAPP APK ==="
           ./gradlew assembleDebug --stacktrace
+
+      - name: Find APK
+        if: success()
+        run: |
+          echo "=== APK files ==="
+          find irapp -type f -name "*.apk" -print
 
       - name: Upload APK
         if: success()
