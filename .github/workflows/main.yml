@@ -17,16 +17,17 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Find and unzip IRAPP source
+      - name: Unzip IRAPP source
         run: |
-          ZIP=$(find . -maxdepth 2 -type f -name "*.zip" | head -n 1)
-          echo "ZIP=$ZIP"
-          unzip -q "$ZIP" -d irapp
+          unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp
 
       - name: Build APK
         run: |
           GRADLEW=$(find irapp -type f -name gradlew | head -n 1)
-          echo "GRADLEW=$GRADLEW"
+          if [ -z "$GRADLEW" ]; then
+            echo "gradlew not found"
+            exit 1
+          fi
           chmod +x "$GRADLEW"
           cd "$(dirname "$GRADLEW")"
           ./gradlew assembleDebug --stacktrace
