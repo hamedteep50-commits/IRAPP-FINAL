@@ -19,7 +19,7 @@ jobs:
 
       - name: Unzip IRAPP source
         run: |
-          unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp
+          unzip -q IRAPP_SUPER_PLATFORM_v4.1.1_GITHUB_READY_CLEAN.zip -d irapp
 
       - name: Build APK
         run: |
