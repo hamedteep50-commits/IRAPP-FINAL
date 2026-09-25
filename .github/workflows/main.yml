@@ -21,22 +21,22 @@ jobs:
         run: |
           unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp
 
-      - name: Find Gradle wrapper
-        run: |
-          find irapp -name gradlew -type f -print
-
       - name: Build APK
         run: |
           GRADLEW=$(find irapp -name gradlew -type f | head -n 1)
+
           if [ -z "$GRADLEW" ]; then
             echo "ERROR: gradlew not found"
+            find irapp -maxdepth 5 -type f | head -200
             exit 1
           fi
+
           chmod +x "$GRADLEW"
           cd "$(dirname "$GRADLEW")"
           ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: IRAPP-v4.1.1-APK
