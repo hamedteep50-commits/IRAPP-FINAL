@@ -12,44 +12,23 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
 
       - name: Unzip IRAPP source
-        run: |
-          unzip -q IRAPP_SUPER_PLATFORM_v4.1.1_GITHUB_READY_CLEAN.zip -d irapp
+        run: unzip -q IRAPP_SUPER_PLATFORM_v4.1.1_GITHUB_READY_CLEAN.zip -d irapp
 
       - name: Build APK
         run: |
+          find irapp -name gradlew -type f -exec chmod +x {} \;
           GRADLEW=$(find irapp -name gradlew -type f | head -n 1)
-
-          if [ -z "$GRADLEW" ]; then
-            echo "ERROR: gradlew not found"
-            find irapp -maxdepth 5 -type f | head -200
-            exit 1
-          fi
-
-          chmod +x "$GRADLEW"
           cd "$(dirname "$GRADLEW")"
-
-          echo "=== Gradle version ==="
-          ./gradlew --version
-
-          echo "=== Building IRAPP APK ==="
-          ./gradlew assembleDebug --stacktrace
-
-      - name: Find APK
-        if: success()
-        run: |
-          echo "=== APK files ==="
-          find irapp -type f -name "*.apk" -print
+          ./gradlew assembleDebug
 
       - name: Upload APK
-        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: IRAPP-v4.1.1-APK
           path: irapp/**/build/outputs/apk/**/*.apk
-          if-no-files-found: error
