@@ -17,18 +17,24 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Unzip IRAPP source
-        run: unzip -q IRAPP_SUPER_PLATFORM_v4.1.1_GITHUB_READY_CLEAN.zip -d irapp
+      - name: Find and unzip IRAPP source
+        run: |
+          ZIP=$(find . -maxdepth 2 -type f -name "*.zip" | head -n 1)
+          echo "ZIP=$ZIP"
+          unzip -q "$ZIP" -d irapp
 
       - name: Build APK
         run: |
-          find irapp -name gradlew -type f -exec chmod +x {} \;
-          GRADLEW=$(find irapp -name gradlew -type f | head -n 1)
+          GRADLEW=$(find irapp -type f -name "gradlew" | head -n 1)
+          echo "GRADLEW=$GRADLEW"
+          chmod +x "$GRADLEW"
           cd "$(dirname "$GRADLEW")"
           ./gradlew assembleDebug
 
       - name: Upload APK
+        if: success()
         uses: actions/upload-artifact@v4
         with:
           name: IRAPP-v4.1.1-APK
           path: irapp/**/build/outputs/apk/**/*.apk
+          if-no-files-found: error
