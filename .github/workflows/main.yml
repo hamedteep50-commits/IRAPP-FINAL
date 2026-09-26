@@ -1,0 +1,41 @@
+name: Build IRAPP v4.1.1 APK
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Unzip IRAPP source
+        run: |
+          unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp
+
+      - name: Build APK
+        run: |
+          GRADLEW=$(find irapp -type f -name gradlew | head -n 1)
+          if [ -z "$GRADLEW" ]; then
+            echo "gradlew not found"
+            exit 1
+          fi
+          chmod +x "$GRADLEW"
+          cd "$(dirname "$GRADLEW")"
+          ./gradlew assembleDebug --stacktrace
+
+      - name: Upload APK
+        if: success()
+        uses: actions/upload-artifact@v4
+        with:
+          name: IRAPP-v4.1.1-APK
+          path: irapp/**/build/outputs/apk/**/*.apk
+          if-no-files-found: error
