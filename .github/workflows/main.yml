@@ -12,7 +12,7 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           distribution: temurin
           java-version: '17'
@@ -20,16 +20,25 @@ jobs:
       - name: Unzip IRAPP source
         run: |
           unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp
+          echo "=== ZIP CONTENT ==="
+          find irapp -maxdepth 3 -type f | head -100
 
-      - name: Build APK
+      - name: Find Gradle project
         run: |
           GRADLEW=$(find irapp -type f -name gradlew | head -n 1)
           if [ -z "$GRADLEW" ]; then
-            echo "gradlew not found"
+            echo "ERROR: gradlew not found inside ZIP"
+            echo "=== FULL DIRECTORY STRUCTURE ==="
+            find irapp -maxdepth 5 -type f | head -200
             exit 1
           fi
-          chmod +x "$GRADLEW"
-          cd "$(dirname "$GRADLEW")"
+          echo "Found Gradle wrapper: $GRADLEW"
+          echo "GRADLE_DIR=$(dirname "$GRADLEW")" >> "$GITHUB_ENV"
+
+      - name: Build APK
+        run: |
+          cd "$GRADLE_DIR"
+          chmod +x gradlew
           ./gradlew assembleDebug --stacktrace
 
       - name: Upload APK
