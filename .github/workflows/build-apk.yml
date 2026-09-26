@@ -20,13 +20,29 @@ jobs:
       - name: Setup Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Extract IRAPP project
+        run: |
+          unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp-project
+
+      - name: Find Gradle project
+        run: |
+          echo "Searching for gradlew..."
+          find irapp-project -name gradlew -type f -print
+
       - name: Build APK
         run: |
-          chmod +x gradlew
+          GRADLEW=$(find irapp-project -name gradlew -type f | head -n 1)
+          if [ -z "$GRADLEW" ]; then
+            echo "ERROR: gradlew not found"
+            exit 1
+          fi
+          chmod +x "$GRADLEW"
+          PROJECT_DIR=$(dirname "$GRADLEW")
+          cd "$PROJECT_DIR"
           ./gradlew assembleDebug
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: IRAPP-debug-APK
-          path: '**/build/outputs/apk/**/*.apk'
+          path: 'irapp-project/**/build/outputs/apk/**/*.apk'
