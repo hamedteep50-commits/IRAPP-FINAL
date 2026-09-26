@@ -1,48 +1,23 @@
-name: Build IRAPP APK
+name: Check IRAPP ZIP
 
 on:
   workflow_dispatch:
 
 jobs:
-  build:
+  inspect:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Set up JDK 17
-        uses: actions/setup-java@v4
-        with:
-          distribution: temurin
-          java-version: '17'
-
-      - name: Setup Android SDK
-        uses: android-actions/setup-android@v3
-
-      - name: Extract IRAPP project
+      - name: Inspect ZIP
         run: |
-          unzip -q IRAPP_v4.1.1_COMPLETE_2026-09-25.zip -d irapp-project
+          echo "=== ZIP FILE ==="
+          ls -lh *.zip
 
-      - name: Find Gradle project
-        run: |
-          echo "Searching for gradlew..."
-          find irapp-project -name gradlew -type f -print
+          echo "=== ZIP CONTENTS ==="
+          unzip -l IRAPP_v4.1.1_COMPLETE_2026-09-25.zip
 
-      - name: Build APK
-        run: |
-          GRADLEW=$(find irapp-project -name gradlew -type f | head -n 1)
-          if [ -z "$GRADLEW" ]; then
-            echo "ERROR: gradlew not found"
-            exit 1
-          fi
-          chmod +x "$GRADLEW"
-          PROJECT_DIR=$(dirname "$GRADLEW")
-          cd "$PROJECT_DIR"
-          ./gradlew assembleDebug
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: IRAPP-debug-APK
-          path: 'irapp-project/**/build/outputs/apk/**/*.apk'
+          echo "=== SEARCH IMPORTANT FILES ==="
+          unzip -l IRAPP_v4.1.1_COMPLETE_2026-09-25.zip | grep -E '(^|/)(gradlew|settings.gradle|build.gradle|build.gradle.kts)$' || true
