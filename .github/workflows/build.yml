@@ -20,27 +20,43 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Find Gradle project
-        run: |
-          echo "Searching for Gradle project..."
-          find . -type f \( -name "settings.gradle" -o -name "settings.gradle.kts" \) -print
-
       - name: Install Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.6'
 
-      - name: Build Debug APK
+      - name: Find Android project
         run: |
-          ROOT=$(dirname "$(find . -type f \( -name 'settings.gradle' -o -name 'settings.gradle.kts' \) | head -n 1)")
+          echo "Searching entire repository..."
 
-          if [ -z "$ROOT" ]; then
-            echo "ERROR: settings.gradle not found."
+          find . -type f \( \
+            -name "settings.gradle" \
+            -o -name "settings.gradle.kts" \
+          \) -print
+
+      - name: Build APK
+        run: |
+          SETTINGS=$(find . -type f \( \
+            -name "settings.gradle" \
+            -o -name "settings.gradle.kts" \
+          \) | head -n 1)
+
+          if [ -z "$SETTINGS" ]; then
+            echo "ERROR: No settings.gradle found."
+            echo "Repository structure:"
+            find . -maxdepth 5 -type f | head -200
             exit 1
           fi
 
-          echo "Gradle project root: $ROOT"
+          ROOT=$(dirname "$SETTINGS")
+
+          echo "FOUND SETTINGS: $SETTINGS"
+          echo "PROJECT ROOT: $ROOT"
+
           cd "$ROOT"
+
+          echo "Project files:"
+          ls -la
 
           gradle assembleDebug --stacktrace
 
