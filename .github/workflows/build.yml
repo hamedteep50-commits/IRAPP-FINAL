@@ -20,14 +20,10 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Check project files
+      - name: Find Gradle project
         run: |
-          echo "Project root:"
-          pwd
-          echo "Files:"
-          ls -la
-          echo "Gradle files:"
-          find . -maxdepth 2 -type f \( -name "build.gradle" -o -name "settings.gradle" -o -name "gradle.properties" \) -print
+          echo "Searching for Gradle project..."
+          find . -type f \( -name "settings.gradle" -o -name "settings.gradle.kts" \) -print
 
       - name: Install Gradle
         uses: gradle/actions/setup-gradle@v4
@@ -35,10 +31,21 @@ jobs:
           gradle-version: '8.6'
 
       - name: Build Debug APK
-        run: gradle assembleDebug --stacktrace
+        run: |
+          ROOT=$(dirname "$(find . -type f \( -name 'settings.gradle' -o -name 'settings.gradle.kts' \) | head -n 1)")
+
+          if [ -z "$ROOT" ]; then
+            echo "ERROR: settings.gradle not found."
+            exit 1
+          fi
+
+          echo "Gradle project root: $ROOT"
+          cd "$ROOT"
+
+          gradle assembleDebug --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: IRAPP-APK
-          path: app/build/outputs/apk/debug/*.apk
+          path: '**/app/build/outputs/apk/debug/*.apk'
