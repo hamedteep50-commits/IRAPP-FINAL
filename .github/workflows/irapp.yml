@@ -1,0 +1,58 @@
+name: IRAPP Build
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Extract IRAPP ZIP
+        run: |
+          mkdir -p irapp
+          unzip -q IRAPP_SUPER_PLATFORM_v4.3.0_MASTER.zip -d irapp
+          echo "ZIP extracted successfully."
+
+      - name: Find Android Project
+        run: |
+          SETTINGS=$(find irapp -type f \( -name "settings.gradle" -o -name "settings.gradle.kts" \) | head -n 1)
+
+          if [ -z "$SETTINGS" ]; then
+            echo "ERROR: Android Gradle project not found."
+            find irapp -maxdepth 5 -type f | head -200
+            exit 1
+          fi
+
+          ROOT=$(dirname "$SETTINGS")
+          echo "PROJECT ROOT: $ROOT"
+          echo "ROOT=$ROOT" >> "$GITHUB_ENV"
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Install Gradle 8.6
+        uses: gradle/actions/setup-gradle@v4
+        with:
+          gradle-version: '8.6'
+
+      - name: Build APK
+        run: |
+          cd "$ROOT"
+          echo "Building from: $(pwd)"
+          gradle assembleDebug --stacktrace
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: IRAPP-APK
+          path: '**/app/build/outputs/apk/debug/*.apk'
