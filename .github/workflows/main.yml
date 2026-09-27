@@ -1,0 +1,69 @@
+name: Extract IRAPP ZIP into Repository
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  extract:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Find IRAPP ZIP
+        run: |
+          ZIP=$(find . -maxdepth 1 -type f -name 'IRAPP_SUPER_PLATFORM_*.zip' | head -n 1)
+
+          if [ -z "$ZIP" ]; then
+            echo "IRAPP ZIP not found."
+            exit 1
+          fi
+
+          echo "Found: $ZIP"
+          echo "ZIP=$ZIP" >> "$GITHUB_ENV"
+
+      - name: Extract ZIP
+        run: |
+          rm -rf extracted
+          mkdir extracted
+          unzip -q "$ZIP" -d extracted
+
+          echo "ZIP extracted successfully."
+
+      - name: Find Android project root
+        run: |
+          ROOT=$(dirname "$(find extracted -type f \( -name 'settings.gradle' -o -name 'settings.gradle.kts' \) | head -n 1)")
+
+          if [ -z "$ROOT" ] || [ "$ROOT" = "." ]; then
+            echo "Android project root was not found."
+            find extracted -maxdepth 4 -type f | head -100
+            exit 1
+          fi
+
+          echo "Project root: $ROOT"
+          echo "ROOT=$ROOT" >> "$GITHUB_ENV"
+
+      - name: Copy project files to repository root
+        run: |
+          rsync -a "$ROOT"/ ./ \
+            --exclude='.git'
+
+          echo "Project files copied to repository root."
+
+      - name: Commit extracted project
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add .
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "Extract IRAPP v4.3.0 project source"
+            git push
+          fi
