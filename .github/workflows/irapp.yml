@@ -1,3 +1,4 @@
+نوشتن
 name: IRAPP Build
 
 on:
@@ -17,12 +18,9 @@ jobs:
       - name: Check IRAPP ZIP
         shell: bash
         run: |
-          echo "Checking IRAPP project ZIP..."
           ls -la
-
           if [ ! -f "IRAPP_v4.3.1_SUPABASE_CONNECT.zip" ]; then
-            echo "ERROR: IRAPP_v4.3.1_SUPABASE_CONNECT.zip not found."
-            echo "Available ZIP files:"
+            echo "ERROR: IRAPP ZIP not found."
             find . -maxdepth 3 -type f -name "*.zip"
             exit 1
           fi
@@ -32,7 +30,6 @@ jobs:
         run: |
           mkdir -p irapp
           unzip -q IRAPP_v4.3.1_SUPABASE_CONNECT.zip -d irapp
-          echo "ZIP extracted successfully."
 
       - name: Find Android Project
         shell: bash
@@ -48,8 +45,8 @@ jobs:
           fi
 
           ROOT=$(dirname "$SETTINGS")
-          echo "Android project root: $ROOT"
           echo "ROOT=$ROOT" >> "$GITHUB_ENV"
+          echo "Project root: $ROOT"
 
       - name: Set up Java 17
         uses: actions/setup-java@v4
@@ -62,6 +59,11 @@ jobs:
         with:
           packages: "platform-tools"
 
+      - name: Accept SDK Licenses
+        shell: bash
+        run: |
+          yes | sdkmanager --licenses || true
+
       - name: Install Android SDK Packages
         shell: bash
         run: |
@@ -69,18 +71,12 @@ jobs:
             "platforms;android-35" \
             "build-tools;35.0.0"
 
-      - name: Verify Android SDK
-        shell: bash
-        run: |
-          adb version
-          sdkmanager --list_installed
-
       - name: Set up Gradle 8.7
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: "8.7"
 
-      - name: Build Debug APK
+      - name: Build APK
         shell: bash
         run: |
           cd "$ROOT"
@@ -90,6 +86,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: IRAPP-v4.3.1-APK
-          path: |
-            irapp/**/build/outputs/apk/debug/*.apk
+          path: irapp/**/build/outputs/apk/debug/*.apk
           if-no-files-found: error
