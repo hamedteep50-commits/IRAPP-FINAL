@@ -15,15 +15,24 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Check IRAPP ZIP
+        run: |
+          ls -la
+          test -f IRAPP_v4.3.1_SUPABASE_CONNECT.zip || {
+            echo "ERROR: IRAPP ZIP file not found."
+            exit 1
+          }
+
       - name: Extract IRAPP ZIP
         run: |
           mkdir -p irapp
           unzip -q IRAPP_v4.3.1_SUPABASE_CONNECT.zip -d irapp
-          echo "ZIP extracted successfully."
 
       - name: Find Android Project
         run: |
-          SETTINGS=$(find irapp -type f \( -name "settings.gradle" -o -name "settings.gradle.kts" \) | head -n 1)
+          SETTINGS=$(find irapp -type f \
+            \( -name settings.gradle -o -name settings.gradle.kts \) \
+            | head -n 1)
 
           if [ -z "$SETTINGS" ]; then
             echo "ERROR: Android Gradle project not found."
@@ -44,8 +53,16 @@ jobs:
       - name: Set up Android SDK
         uses: android-actions/setup-android@v3
 
+      - name: Accept Android SDK Licenses
+        run: |
+          yes | sdkmanager --licenses || true
+
       - name: Install Android SDK
-        run: sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"
+        run: |
+          sdkmanager --install \
+            "platform-tools" \
+            "platforms;android-35" \
+            "build-tools;35.0.0"
 
       - name: Install Gradle 8.7
         uses: gradle/actions/setup-gradle@v4
@@ -61,5 +78,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: IRAPP-v4.3.1-APK
-          path: '**/app/build/outputs/apk/debug/*.apk'
+          path: irapp/**/build/outputs/apk/debug/*.apk
           if-no-files-found: error
