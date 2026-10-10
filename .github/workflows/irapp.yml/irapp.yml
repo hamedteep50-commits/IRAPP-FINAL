@@ -19,10 +19,10 @@ jobs:
         shell: bash
         run: |
           set -e
-          ZIP_FILE=$(find . -maxdepth 2 -type f -name "*.zip" -print -quit)
+          ZIP_FILE=$(find . -maxdepth 3 -type f -name "*.zip" -print -quit)
 
           if [ -z "$ZIP_FILE" ]; then
-            echo "ERROR: No project ZIP found."
+            echo "ERROR: Project ZIP not found."
             find . -maxdepth 4 -type f
             exit 1
           fi
@@ -46,7 +46,7 @@ jobs:
             -print -quit)
 
           if [ -z "$SETTINGS" ]; then
-            echo "ERROR: Android project settings file not found."
+            echo "ERROR: Android project settings not found."
             find irapp -maxdepth 6 -type f | head -200
             exit 1
           fi
@@ -70,7 +70,7 @@ jobs:
           set +o pipefail
           yes | sdkmanager --licenses
 
-      - name: Install Android SDK Packages
+      - name: Install Android SDK
         shell: bash
         run: |
           sdkmanager --install \
@@ -90,7 +90,7 @@ jobs:
           cd "$ROOT"
           gradle assembleDebug --stacktrace
 
-      - name: Locate APK
+      - name: Find APK
         shell: bash
         run: |
           set -e
@@ -110,4 +110,4 @@ jobs:
         with:
           name: IRAPP-APK
           path: irapp/**/build/outputs/apk/debug/*.apk
-          if
+          if-no-files-found: error
