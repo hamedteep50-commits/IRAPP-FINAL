@@ -11,20 +11,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-    env:
-      ANDROID_HOME: /usr/local/lib/android/sdk
-      ANDROID_SDK_ROOT: /usr/local/lib/android/sdk
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Check IRAPP ZIP
         run: |
-          echo "Checking project ZIP..."
-          ls -la
           if [ ! -f "IRAPP_v4.3.1_SUPABASE_CONNECT.zip" ]; then
             echo "ERROR: IRAPP ZIP file not found."
+            ls -la
             exit 1
           fi
 
@@ -32,7 +27,6 @@ jobs:
         run: |
           mkdir -p irapp
           unzip -q IRAPP_v4.3.1_SUPABASE_CONNECT.zip -d irapp
-          echo "ZIP extracted successfully."
 
       - name: Find Android Project
         shell: bash
@@ -57,50 +51,23 @@ jobs:
           distribution: temurin
           java-version: '17'
 
-      - name: Locate Android SDK Manager
-        shell: bash
-        run: |
-          SDK="$ANDROID_HOME"
-          echo "Android SDK path: $SDK"
-
-          if [ ! -d "$SDK" ]; then
-            echo "ERROR: Android SDK directory not found."
-            exit 1
-          fi
-
-          SDKMANAGER=$(find "$SDK" -type f -name sdkmanager \
-            2>/dev/null | sort -V | tail -n 1)
-
-          if [ -z "$SDKMANAGER" ]; then
-            echo "ERROR: sdkmanager not found on runner."
-            find "$SDK" -maxdepth 4 -type d | head -100
-            exit 1
-          fi
-
-          echo "SDK Manager: $SDKMANAGER"
-          echo "$(dirname "$SDKMANAGER")" >> "$GITHUB_PATH"
-          echo "$SDK/platform-tools" >> "$GITHUB_PATH"
-          echo "SDKMANAGER=$SDKMANAGER" >> "$GITHUB_ENV"
-
-      - name: Accept Android SDK Licenses
-        shell: bash
-        run: |
-          yes | "$SDKMANAGER" --licenses || true
+      - name: Set up Android SDK
+        uses: android-actions/setup-android@v4
+        with:
+          packages: 'platform-tools'
 
       - name: Install Android SDK Packages
-        shell: bash
         run: |
-          "$SDKMANAGER" --install \
-            "platform-tools" \
+          sdkmanager --install \
             "platforms;android-35" \
             "build-tools;35.0.0"
 
       - name: Verify Android SDK
         run: |
           adb version
-          "$SDKMANAGER" --list_installed
+          sdkmanager --list_installed
 
-      - name: Set up Gradle 8.7
+      - name: Set up Gradle
         uses: gradle/actions/setup-gradle@v4
         with:
           gradle-version: '8.7'
