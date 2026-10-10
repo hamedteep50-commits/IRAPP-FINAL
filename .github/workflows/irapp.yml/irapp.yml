@@ -1,0 +1,55 @@
+name: IRAPP Build
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Verify Project ZIP
+        shell: bash
+        run: |
+          set -e
+          if [ ! -f "IRAPP_v4.3.1_SUPABASE_CONNECT.zip" ]; then
+            echo "ERROR: Project ZIP not found."
+            find . -maxdepth 4 -type f -name "*.zip"
+            exit 1
+          fi
+
+      - name: Extract Project ZIP
+        shell: bash
+        run: |
+          set -e
+          mkdir -p irapp
+          unzip -q IRAPP_v4.3.1_SUPABASE_CONNECT.zip -d irapp
+
+      - name: Find Android Project
+        shell: bash
+        run: |
+          set -e
+          SETTINGS=$(find irapp -type f \
+            \( -name "settings.gradle" -o -name "settings.gradle.kts" \) \
+            -print -quit)
+
+          if [ -z "$SETTINGS" ]; then
+            echo "ERROR: Android project not found in ZIP."
+            find irapp -maxdepth 6 -type f | head -200
+            exit 1
+          fi
+
+          ROOT=$(dirname "$SETTINGS")
+          echo "ROOT=$ROOT" >> "$GITHUB_ENV"
+          echo "Project root: $ROOT"
+
+      - name: Set up Java 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: tem
